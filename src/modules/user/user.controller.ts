@@ -5,11 +5,13 @@ import { User } from './interfaces/user.interface';
 
 @Controller('user')
 export class UserController {
-	constructor(private readonly userService: UserService) { }
+	constructor(
+		private readonly userService: UserService,
+	) { }
 
 	@Post()
 	async create(@Body() createCatDto: CreateUserDto) {
-		this.userService.create(createCatDto);
+		return this.userService.create(createCatDto);
 	}
 
 	@Get()

@@ -15,5 +15,5 @@
 		"object-literal-sort-keys": false,
 		"indent": [true, "tabs"]
   },
-  "rulesDirectory": []
+	"rulesDirectory": []
 }
